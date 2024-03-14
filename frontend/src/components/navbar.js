@@ -4,7 +4,7 @@ import logo from "../Images/orbit-logo.png";
 export default function navbar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary p-3">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary p-3 shadow-lg">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             <img
@@ -24,7 +24,9 @@ export default function navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span>
+              <i className="fa-solid fa-bars-staggered"></i>
+            </span>
           </button>
           <div
             className="collapse navbar-collapse justify-content-center"
@@ -32,22 +34,26 @@ export default function navbar() {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/">
+                <a
+                  className="nav-link hover-underline-animation"
+                  aria-current="page"
+                  href="/"
+                >
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link hover-underline-animation" href="/">
                   Courses
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link hover-underline-animation" href="/">
                   Pricing
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-disabled="true">
+                <a className="nav-link hover-underline-animation" href="/">
                   About Us
                 </a>
               </li>
